@@ -1,0 +1,41 @@
+.header-search {
+  display: flex;
+  width: 100%;
+}
+
+.header-search input {
+  flex: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ 
+.input-search {
+  max-height: 48px;
+  padding: 16px;
+  background-color: rgb(191, 218, 241);
+  border-radius: 50px 0 0 50px;
+  color: black;
+  border: 0;
+  border: none;
+  outline: none;
+
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 18px; 
+}

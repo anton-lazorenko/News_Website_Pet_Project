@@ -1,0 +1,19 @@
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header__items {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.loginButton {
+  padding: 13px 48px;
+  border-radius: 50px; 
+  white-space: nowrap;
+}

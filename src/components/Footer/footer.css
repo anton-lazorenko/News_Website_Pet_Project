@@ -1,0 +1,10 @@
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-items {
+  padding-top: 140px;
+  display: flex;  
+  justify-content: space-between; 
+}

@@ -1,0 +1,9 @@
+.opinion-items {
+  display: flex;
+  gap: 24px; 
+}
+
+.opinion-info {
+  display: flex;
+  flex-direction: column;
+}

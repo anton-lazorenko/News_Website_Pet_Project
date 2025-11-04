@@ -1,0 +1,33 @@
+.aside-left-items {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-left-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.aside-left-date {
+  font-weight: 600;
+  color: grey;
+}
+
+.aside-left-item-description-show {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.aside-left-item-description-hide {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

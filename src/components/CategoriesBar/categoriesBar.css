@@ -1,0 +1,24 @@
+.categories-bar {
+  display: flex;
+  gap: 24px;   
+  padding: 16px; 
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+.categories-bar button {
+  font-size: 18px; 
+  padding: 16px 32px; 
+  border-radius: 50px; 
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+}
+
+.categories-bar button:hover { 
+  background-color: rgb(227, 227, 227); 
+}

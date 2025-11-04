@@ -1,0 +1,10 @@
+.aside-right-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.opinions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

@@ -1,0 +1,38 @@
+.article-section {
+  display: flex;
+  gap: 24px;
+}
+
+.article-card {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 24px;
+}
+
+.article-image {
+  width: 100%;
+  object-fit: cover;
+}
+ 
+.article-title {
+  font-size: 24px; 
+  font-weight: 600;
+  margin: 0;
+}
+
+.description-truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description-full {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset; 
+}

@@ -1,0 +1,15 @@
+.btn { 
+  padding: 16px 48px;
+  border: 0;  
+  background-color: #248aef;
+}
+
+.btn-light {
+  background-color: #248aef;
+  color: rgb(227, 227, 227);
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: black;
+}
