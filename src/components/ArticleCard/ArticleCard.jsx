@@ -20,10 +20,10 @@ export function ArticleCard({ article }) {
       <p className={open ? 'description-full' : 'description-truncated'}>
         {article.description}
       </p>
-
       <UniversalButton onClick={() => setOpen(!open)}>
         {open ? 'Hide' : 'Show'}
       </UniversalButton>
     </div>
+
   )
 }

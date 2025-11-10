@@ -1,6 +1,4 @@
-import './aside-left.css';
-
-import { useState, useEffect } from 'react'
+import './aside-left.css'; 
 
 import { AsideLeftItem } from '../AsideLeftItem'
 

@@ -6,8 +6,7 @@ import { useState, useEffect } from 'react'
 export function Main({ articles }) {
   const [state, setState] = useState(articles.title)
 
-
-
+ 
   return (
     <div className="main-items">
       <h2 className='main-title'>Latest News</h2>

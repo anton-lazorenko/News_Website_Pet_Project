@@ -1,3 +1,13 @@
+.currency-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.currency-date {
+  margin-top: 16px;
+}
+
 table {
   border-collapse: collapse; 
   width: 100%; 
@@ -7,3 +17,4 @@ th, td {
   padding: 8px 12px; 
   text-align: left; 
 }
+

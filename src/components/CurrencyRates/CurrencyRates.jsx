@@ -9,8 +9,7 @@ export function CurrencyRates() {
   const fetchCurrencyRate = async () => {
     try {
       const res = await fetch(currencyRateApiUrl);
-      const data = await res.json();
-      console.log(data)
+      const data = await res.json(); 
       setRates(data)
     }
     catch (error) {
@@ -23,8 +22,8 @@ export function CurrencyRates() {
   }, [])
 
   return (
-    <div>
-      <h4>{rates ? rates.time_last_update_utc : '-'}</h4>
+    <div className='currency-items'>
+      <h4 className='currency-date'>{rates ? rates.time_last_update_utc.slice(0, 16) : '-'}</h4>
       <table>
         <tbody>
           <tr>

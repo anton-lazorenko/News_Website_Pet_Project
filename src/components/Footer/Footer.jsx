@@ -1,7 +1,8 @@
 import './footer.css'
 
-
 import { FooterSection } from '../FooterSection'
+import { SocialIcon } from '../SocialIcon'
+
 
 const sections = [
   {
@@ -16,8 +17,6 @@ const sections = [
     title: "Socials",
     items: ["Instagram", "Facebook", "YouTube"]
   },
- 
-
 ]
 
 export function Footer() {
@@ -31,6 +30,13 @@ export function Footer() {
             items={section.items}
           />
         ))}
+      </div>
+      <div className='social-links'>
+        <SocialIcon name="facebook" href="https://facebook.com" />
+        <SocialIcon name="instagram" href="https://instagram.com" />
+        <SocialIcon name="telegram" href="https://t.me/anton" />
+        <SocialIcon name="twitter" href="https://twitter.com" />
+        <SocialIcon name="youtube" href="https://youtube.com" />
       </div>
     </footer>
   )

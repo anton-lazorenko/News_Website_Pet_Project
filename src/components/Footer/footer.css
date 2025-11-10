@@ -8,3 +8,8 @@
   display: flex;  
   justify-content: space-between; 
 }
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}

@@ -6,7 +6,7 @@ import { UniversalButton } from '../UniversalButton';
 
 
 
-export function Header({ setCategory, fetchNews }) {
+export function Header({ setCategory, fetchNews, modalOpenHandler }) {
 
   return (
     <div className="header__wrapper">
@@ -14,7 +14,7 @@ export function Header({ setCategory, fetchNews }) {
         <Logo />
         <Search fetchNews={fetchNews} />
         <div>
-        <button className='loginButton'>Log In</button>
+        <button onClick={modalOpenHandler} className='loginButton'>Log In</button>
         </div>
       </div>
       <CategoriesBar setCategory={setCategory} />
