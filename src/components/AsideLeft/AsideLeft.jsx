@@ -7,7 +7,7 @@ export function AsideLeft({ articles }) {
 
   return (
     <div className='aside-left'>
-      <h2 className="aside-title">News</h2>
+      <h2 className="aside-title">Brief News</h2>
       <div className="aside-left-items">
         <AsideLeftItem articles={articles} />
       </div>

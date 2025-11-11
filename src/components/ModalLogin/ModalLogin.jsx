@@ -29,12 +29,8 @@ export function ModalLogin({ onClose, onRegisterClick }) {
             autoComplete="current-password"
             required
           />
-
-          <button className='enter-button' type="submit">Enter</button>
-        </fieldset>
-
-        <div role="separator" aria-orientation="horizontal"></div>
-
+        </fieldset> 
+        <button className='enter-button' type="submit">Enter</button>  
         <button
           className='enter-with-google-button'
           type="button"

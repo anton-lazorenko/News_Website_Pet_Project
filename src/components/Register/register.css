@@ -26,5 +26,7 @@
 
 .register-items input {
   width: 600px;
-  padding: 16px;
+  padding: 16px; 
+  border: 0;
+  outline: none;
 }

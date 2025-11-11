@@ -40,13 +40,7 @@ function App() {
   return (
     <>
       <div className='wrapper'>
-        <Header  modalOpenHandler={openLogin} setArticles={setArticles} fetchNews={fetchNews} setCategory={setCategory} />
-        {activeModal === 'login' && (
-          <ModalLogin onClose={closeModal} onRegisterClick={openRegister} />
-        )} 
-        {activeModal === 'register' && (
-          <Register onClose={closeModal} />
-        )}
+        <Header modalOpenHandler={openLogin} setArticles={setArticles} fetchNews={fetchNews} setCategory={setCategory} /> 
         <div className="main-wrapper">
           <AsideLeft articles={articles} />
           <Main articles={articles} />
@@ -56,6 +50,12 @@ function App() {
       <div className='footer-wrapper'>
         <Footer />
       </div>
+      {activeModal === 'login' && (
+        <ModalLogin onClose={closeModal} onRegisterClick={openRegister} />
+      )}
+      {activeModal === 'register' && (
+        <Register onClose={closeModal} />
+      )}
     </>
   )
 }
