@@ -44,7 +44,7 @@ function App() {
         <div className="main-wrapper">
           <AsideLeft articles={articles} />
           <Main articles={articles} />
-          <AsideRight />
+          <AsideRight articles={articles}/>
         </div>
       </div>
       <div className='footer-wrapper'>

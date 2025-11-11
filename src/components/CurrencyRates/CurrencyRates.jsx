@@ -28,7 +28,7 @@ export function CurrencyRates() {
         <tbody>
           <tr>
             <th></th>
-            <th>Buy</th>  
+            <th>Rate</th>  
           </tr>
           <tr>
             <td>USD</td>

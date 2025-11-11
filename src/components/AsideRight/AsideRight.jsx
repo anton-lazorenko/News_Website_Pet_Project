@@ -1,4 +1,5 @@
 import './aside-right.css';
+import { AsideAd } from '../AsideAd'
 
 import { CurrencyRates } from '../CurrencyRates'
 import { Opinion } from '../Opinion'
@@ -11,14 +12,8 @@ export function AsideRight() {
       <div>
         <h2 className="aside-title">Currency rates</h2>
         <CurrencyRates />
-      </div>
-      <div>
-        <h2 className="aside-title">Main News</h2>
-        <span>News1</span>
-        <span>News2</span>
-        <span>News3</span>
-        <span>News4</span>
-      </div>
+      </div> 
+      <AsideAd />
       <div>
         <h2 className="aside-title">Opinions</h2>
         <div className="opinions-list">
