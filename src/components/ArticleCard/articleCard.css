@@ -42,3 +42,7 @@
   flex-direction: column;
   cursor: pointer;
 }
+
+.creator {
+  font-style: italic;
+}

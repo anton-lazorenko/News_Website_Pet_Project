@@ -3,14 +3,9 @@
   flex-direction: column; 
   gap: 48px;
   padding: 0 16px;
-}
-
-.opinions-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+} 
 
 .aside-title {
   padding-top: 24px;
 }
+ 

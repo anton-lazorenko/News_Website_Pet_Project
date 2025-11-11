@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 import './categoriesBar.css'
 
@@ -12,7 +12,7 @@ export function CategoriesBar({ setCategory }) {
       if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
         e.preventDefault();
         const scrollSpeed = 5.5;
-        el.scrollLeft += e.deltaY * scrollSpeed;
+        el.scrollLeft += e.deltaY * scrollSpeed; 
       }
     };
 
@@ -43,7 +43,7 @@ export function CategoriesBar({ setCategory }) {
       <button onClick={() => setCategory('Food')}>Food</button>
       <button onClick={() => setCategory('Law')}>Law</button>
       <button onClick={() => setCategory('Music')}>Music</button>
-      <button onClick={() => setCategory('Opinion')}>Opinion</button> 
+      <button onClick={() => setCategory('Opinion')}>Opinion</button>
     </div>
   )
 }

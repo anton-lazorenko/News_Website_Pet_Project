@@ -2,12 +2,14 @@
 import './App.css'
 
 import { Header } from './components/Header'
-import { Main } from './components/Main'
+
 import { Footer } from './components/Footer'
-import { AsideLeft } from './components/AsideLeft'
-import { AsideRight } from './components/AsideRight'
 import { ModalLogin } from './components/ModalLogin'
 import { Register } from './components/Register'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AboutPage } from './pages/AboutPage';
+import { HomePage } from './pages/HomePage';  
 
 import { apiUrl } from './constants/constants'
 import { useState, useEffect } from 'react'
@@ -16,7 +18,6 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState('latest');
   const [activeModal, setActiveModal] = useState(null); // 'login' или 'register'
-
 
   const fetchNews = async (query) => {
     try {
@@ -38,25 +39,25 @@ function App() {
   const openRegister = () => setActiveModal('register');
   const closeModal = () => setActiveModal(null);
   return (
-    <>
+    <Router>
       <div className='wrapper'>
-        <Header modalOpenHandler={openLogin} setArticles={setArticles} fetchNews={fetchNews} setCategory={setCategory} /> 
-        <div className="main-wrapper">
-          <AsideLeft articles={articles} />
-          <Main articles={articles} />
-          <AsideRight articles={articles}/>
-        </div>
+        <Header modalOpenHandler={openLogin} setArticles={setArticles} fetchNews={fetchNews} setCategory={setCategory} />
+        <Routes>
+          <Route path="/" element={<HomePage articles={articles} />} />
+          <Route path="/about" element={<AboutPage />} /> 
+        </Routes>
       </div>
       <div className='footer-wrapper'>
         <Footer />
       </div>
+
       {activeModal === 'login' && (
         <ModalLogin onClose={closeModal} onRegisterClick={openRegister} />
       )}
       {activeModal === 'register' && (
         <Register onClose={closeModal} />
       )}
-    </>
+    </Router>
   )
 }
 

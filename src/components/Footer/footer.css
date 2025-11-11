@@ -13,3 +13,8 @@
   display: flex;
   gap: 24px;
 }
+
+.not-found-button {
+  padding: 16px;
+  background-color: aqua;
+}

@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;  
+  transition: 0.8s linear;
 }
 
 .categories-bar button {

@@ -1,7 +1,6 @@
 import './main.css'
 import { ArticleCard } from '../ArticleCard'
-
-import { useState } from 'react'
+ 
 
 export function Main({ articles }) { 
 
