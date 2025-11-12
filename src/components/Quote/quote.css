@@ -1,0 +1,14 @@
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.quote-text {
+  max-width: 369px;
+}
+.quote-author {
+  font-style: italic; 
+  color: grey;
+}

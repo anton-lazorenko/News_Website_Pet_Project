@@ -1,12 +1,12 @@
 .footer-container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 140px 0;
 }
 
 .footer-items {
-  padding-top: 140px;
-  display: flex;  
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-links {
