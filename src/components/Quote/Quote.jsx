@@ -26,7 +26,7 @@ export function Quote() {
         }
       } catch (err) {
         console.error(err);
-        setQuoteObj({ quote: 'Не удалось загрузить цитату', author: '' });
+        setQuoteObj({ quote: 'Loading error', author: '' });
       }
     };
 

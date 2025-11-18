@@ -9,7 +9,8 @@ import { Register } from './components/Register'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AboutPage } from './pages/AboutPage';
-import { HomePage } from './pages/HomePage';  
+import { HomePage } from './pages/HomePage';
+import { FaqPage } from './pages/FaqPage';
 
 import { apiUrl } from './constants/constants'
 import { useState, useEffect } from 'react'
@@ -17,7 +18,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState('latest');
-  const [activeModal, setActiveModal] = useState(null); // 'login' или 'register'
+  const [activeModal, setActiveModal] = useState(null); 
 
   const fetchNews = async (query) => {
     try {
@@ -44,7 +45,8 @@ function App() {
         <Header modalOpenHandler={openLogin} setArticles={setArticles} fetchNews={fetchNews} setCategory={setCategory} />
         <Routes>
           <Route path="/" element={<HomePage articles={articles} />} />
-          <Route path="/about" element={<AboutPage />} /> 
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/faq" element={<FaqPage />} />
         </Routes>
       </div>
       <div className='footer-wrapper'>

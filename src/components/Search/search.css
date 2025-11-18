@@ -1,6 +1,6 @@
 .header-search {
   display: flex;
-  width: 100%;
+  flex: 1;
 }
 
 .header-search input {
@@ -20,16 +20,13 @@
   overflow: hidden;
 }
  
-.input-search {
-  max-height: 48px;
+.input-search { 
   padding: 16px;
   background-color: rgb(191, 218, 241);
-  border-radius: 50px 0 0 50px;
-  color: black;
-  border: 0;
+  border-radius: 8px 0 0 8px;
+  color: black; 
   border: none;
-  outline: none;
-
+  outline: none;    
 }
 
 .input-search:focus {

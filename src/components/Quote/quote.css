@@ -8,7 +8,17 @@
 .quote-text {
   max-width: 369px;
 }
+
 .quote-author {
-  font-style: italic; 
+  font-style: italic;
   color: grey;
+}
+
+@media (max-width: 960px) {
+  .quote-container {
+    align-items: center;
+  }
+  .quote-container h2 {
+    text-align: center;
+  }
 }

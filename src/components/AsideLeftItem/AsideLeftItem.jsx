@@ -4,7 +4,7 @@ import './AsideLeftItem.css'
 export function AsideLeftItem({ articles }) { 
 
   return (
-    <div>
+    <div className='aside-left-items'>
       {articles && articles.length > 0 ? (
         articles
         .filter(article => article.description && article.description.length <= 500)

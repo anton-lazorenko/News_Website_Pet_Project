@@ -1,0 +1,6 @@
+.accordion-item { margin-bottom: 8px; }
+.accordion-trigger { outline: none; width: 100%; display: flex; justify-content: space-between; padding: 16px; color: black; cursor: pointer; background: #bfdbf2; }
+.accordion-trigger:hover { background: #cccccc; }
+.accordion-content { padding: 16px; background: #fff; }
+.accordion-icon { transition: transform 0.3s; }
+[data-state="open"] .accordion-icon { transform: rotate(180deg); }

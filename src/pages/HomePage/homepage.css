@@ -1,0 +1,23 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;            
+  align-items: flex-start;   
+}
+
+@media (max-width: 1440px) {
+  .main-wrapper { 
+    flex-wrap: wrap;
+  } 
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 12px;
+  }
+}

@@ -1,11 +1,30 @@
 .aside-right-items {
+  max-width: 100%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 48px;
   padding: 0 16px;
-} 
+}
 
 .aside-title {
   padding-top: 24px;
 }
- 
+
+@media (max-width: 1440px) {
+  .aside-right-items {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .quote {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 960px) {
+  .aside-right-items {
+    flex-direction: column;
+    align-items: center;
+  }   
+}

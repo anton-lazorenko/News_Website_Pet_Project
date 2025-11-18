@@ -1,15 +1,11 @@
 .wrapper {
   max-width: 1440px;
-  margin: 0 auto;  
+  margin: 0 auto;
   padding: 0 16px;
-}
-
-.main-wrapper { 
-  display: flex; 
-  justify-content: space-between;
 }
  
 .footer-wrapper {
-  background-color: #f0f3f5; 
+  background-color: #f0f3f5;
   padding: 0 16px;
 }
+

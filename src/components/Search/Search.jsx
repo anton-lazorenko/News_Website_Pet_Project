@@ -7,12 +7,12 @@ import { SearchButton } from '../SearchButton'
 export function Search({ fetchNews }) {
 
 
-  const [query, setQuery] = useState('') // храним то, что вводит пользователь
+  const [query, setQuery] = useState('')  
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!query.trim()) return // если пусто — не ищем
-    fetchNews(query) // вызываем функцию из App — она обновит статьи
+    if (!query.trim()) return  
+    fetchNews(query)  
   }
 
   return (
@@ -30,7 +30,7 @@ export function Search({ fetchNews }) {
         type="search"
         id="site-search"
         name="input"
-        placeholder="Enter your query..."
+        placeholder="Search..."
         onChange={(e) => setQuery(e.target.value)}
       />
       <SearchButton />

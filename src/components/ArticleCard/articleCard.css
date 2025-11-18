@@ -1,8 +1,4 @@
-.article-section {
-  display: flex;
-  gap: 24px;
-}
-
+ 
 .article-card {
   max-width: 560px;
   display: flex;
@@ -25,7 +21,7 @@
 
 .description-truncated {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

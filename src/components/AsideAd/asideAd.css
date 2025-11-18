@@ -3,3 +3,9 @@
   min-height: 350px;
   object-fit: cover;   
 }
+
+@media (max-width: 1440px) {
+  .aside-right-items { 
+    margin: 0 auto;
+  } 
+}

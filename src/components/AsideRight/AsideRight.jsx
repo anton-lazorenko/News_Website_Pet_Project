@@ -2,7 +2,7 @@ import './aside-right.css';
 import { AsideAd } from '../AsideAd'
 import { Quote } from '../Quote'
 
-import { CurrencyRates } from '../CurrencyRates' 
+import { CurrencyRates } from '../CurrencyRates'
 
 export function AsideRight() {
 
@@ -12,8 +12,10 @@ export function AsideRight() {
         <h2 className="aside-title">Currency rates</h2>
         <CurrencyRates />
       </div>
-      <AsideAd /> 
-      <Quote />
+      <AsideAd />
+      <div className='quote'>
+        <Quote />
+      </div>
     </div>
   )
 }
