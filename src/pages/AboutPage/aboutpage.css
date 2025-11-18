@@ -34,3 +34,10 @@
   max-width: 250px;
   padding: 16px 48px;
 }
+
+@media (max-width: 960px) {
+  .figure-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
