@@ -15,8 +15,7 @@ export function ArticleCard({ article }) {
 
       {article.creator && (
         <p><span className="creator">{article.creator.join(', ')}</span></p>
-      )}
-
+      )} 
       <p className={open ? 'description-full' : 'description-truncated'}>
         {article.description}
       </p>

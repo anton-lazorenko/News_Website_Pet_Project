@@ -8,10 +8,10 @@ import { SocialIcon } from '../SocialIcon';
 import { useState } from 'react'
 
 const sections = [
-  { title: "Company", items: ["About", "Career", "Contacts"] },
+  { title: "Company", items: [{ name: "About", path: '/about' }, {name: "Contacts", path: '/contacts'}] },
   { title: "Help", items: [{ name: "FAQ", path: "/faq" }] },
-  { title: "Resources", items: ["Blog", "Guides", "Docs", "Tutorials"] },
-  { title: "Community", items: ["Forums", "Events", "Ambassadors"] }
+  { title: "Resources", items: ["Blog", "Guides"] },
+  { title: "Community", items: ["Forums", "Events"] }
 ];
 
 export function Footer() {
@@ -40,7 +40,9 @@ export function Footer() {
         <SocialIcon name="twitter" href="https://twitter.com" />
         <SocialIcon name="youtube" href="https://youtube.com" />
       </div>
-
+      <div>
+        © 2025 News. All rights reserved. | Terms of Service | Privacy Policy
+      </div>
     </footer>
   )
 }

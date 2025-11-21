@@ -4,8 +4,7 @@
   padding: 140px 0;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-
+  flex-direction: column; 
 }
 
 .footer-items {

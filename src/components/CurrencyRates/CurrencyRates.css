@@ -19,4 +19,19 @@ td {
   text-align: left;
 }
 
- 
+.select-field {
+  padding: 16px;
+  outline: none;
+  border: 0;
+  border-radius: 8px; 
+}
+
+
+@media (max-width: 960px) {
+
+  th,
+  td {
+    text-align: center;
+  }
+
+}

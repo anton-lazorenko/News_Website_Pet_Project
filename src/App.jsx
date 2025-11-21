@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { FaqPage } from './pages/FaqPage';
+import { ContactsPage } from './pages/ContactsPage';
 
 import { apiUrl } from './constants/constants'
 import { useState, useEffect } from 'react'
@@ -47,6 +48,7 @@ function App() {
           <Route path="/" element={<HomePage articles={articles} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
       </div>
       <div className='footer-wrapper'>

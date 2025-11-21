@@ -22,9 +22,10 @@
     margin: 0 auto;
   }
 }
+
 @media (max-width: 960px) {
   .aside-right-items {
     flex-direction: column;
-    align-items: center;
-  }   
+    align-items: center; 
+  }
 }
