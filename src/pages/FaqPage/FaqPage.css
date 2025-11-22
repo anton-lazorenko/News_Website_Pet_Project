@@ -1,5 +1,6 @@
-.accordion-item { margin-bottom: 8px; }
-.accordion-trigger { outline: none; width: 100%; display: flex; justify-content: space-between; padding: 16px; color: black; cursor: pointer; background: #bfdbf2; }
+.accordion-item { margin-bottom: 16px; }
+.accordion-item:nth-child(1) { margin-top: 24px; }
+.accordion-trigger { border-radius: 8px; outline: none; width: 100%; display: flex; justify-content: space-between; padding: 24px; color: black; cursor: pointer; background: #bfdbf2; }
 .accordion-trigger:hover { background: #cccccc; }
 .accordion-content { padding: 16px; background: #fff; }
 .accordion-icon { transition: transform 0.3s; }

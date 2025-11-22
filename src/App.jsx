@@ -12,6 +12,8 @@ import { AboutPage } from './pages/AboutPage';
 import { HomePage } from './pages/HomePage';
 import { FaqPage } from './pages/FaqPage';
 import { ContactsPage } from './pages/ContactsPage';
+import { BlogPage } from './pages/BlogPage';
+import { EventsPage } from './pages/EventsPage';
 
 import { apiUrl } from './constants/constants'
 import { useState, useEffect } from 'react'
@@ -49,6 +51,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/events" element={<EventsPage />} />
         </Routes>
       </div>
       <div className='footer-wrapper'>

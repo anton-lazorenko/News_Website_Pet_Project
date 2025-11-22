@@ -10,8 +10,8 @@ import { useState } from 'react'
 const sections = [
   { title: "Company", items: [{ name: "About", path: '/about' }, {name: "Contacts", path: '/contacts'}] },
   { title: "Help", items: [{ name: "FAQ", path: "/faq" }] },
-  { title: "Resources", items: ["Blog", "Guides"] },
-  { title: "Community", items: ["Forums", "Events"] }
+  { title: "Resources", items: [{name:"Blog", path: '/blog'}] },
+  { title: "Community", items: [{name: "Events", path: '/events'}] }
 ];
 
 export function Footer() {
@@ -40,8 +40,8 @@ export function Footer() {
         <SocialIcon name="twitter" href="https://twitter.com" />
         <SocialIcon name="youtube" href="https://youtube.com" />
       </div>
-      <div>
-        © 2025 News. All rights reserved. | Terms of Service | Privacy Policy
+      <div className='footer-copyright'>
+        <p>© 2025 News. All rights reserved.</p> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
       </div>
     </footer>
   )

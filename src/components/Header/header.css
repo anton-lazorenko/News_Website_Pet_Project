@@ -22,6 +22,12 @@
   background-color: transparent;
 }
 
+.loginButton:hover { 
+  background-color: #57595B;
+  border: 1px solid white;
+  color: white;
+}
+
 .header-buttons {
   display: flex;
   align-items: center;
