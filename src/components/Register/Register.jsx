@@ -20,8 +20,7 @@ export function Register({ onClose }) {
       body: JSON.stringify({ firstName, lastName, email, pass })
     });
 
-    const data = await res.json();
-    console.log("REGISTER RESULT:", data); 
+    const data = await res.json(); 
 
      onClose();
   }

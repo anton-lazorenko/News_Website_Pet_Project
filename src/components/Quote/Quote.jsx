@@ -17,8 +17,7 @@ export function Quote() {
 
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-        const data = await res.json();
-        console.log(data);
+        const data = await res.json(); 
 
         if (data.length > 0) {
           const random = data[Math.floor(Math.random() * data.length)];

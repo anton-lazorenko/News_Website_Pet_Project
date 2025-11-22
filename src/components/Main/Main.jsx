@@ -1,14 +1,12 @@
 import './main.css'
 import { ArticleCard } from '../ArticleCard'
-
-
+ 
 export function Main({ articles }) {
-
-
-
+ 
   return (
     <div className="main-items">
       <h2 className='main-title'>Latest News</h2>
+      {/* render first 8 news publications */}
       {articles
         .filter(article => article.language === 'english')
         .slice(0, 8)

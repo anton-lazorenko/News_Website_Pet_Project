@@ -1,5 +1,5 @@
 .aside-left {
-  max-width: 300px;
+  max-width: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;

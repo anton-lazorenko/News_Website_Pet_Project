@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 
 export function Header({ setCategory, fetchNews, modalOpenHandler }) {
+//  Create state for burger
   const [isOpen, setIsOpen] = useState(false);
 
   return (

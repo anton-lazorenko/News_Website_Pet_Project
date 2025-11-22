@@ -1,6 +1,0 @@
-.avatar {
-  width: 50px;       /* размер */
-  height: 50px;
-  border-radius: 50%; /* круглая форма */
-  object-fit: cover;  /* чтобы картинка не растягивалась */
-}

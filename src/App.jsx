@@ -20,6 +20,7 @@ function App() {
   const [category, setCategory] = useState('latest');
   const [activeModal, setActiveModal] = useState(null);
 
+  // fetch request to News API
   const fetchNews = async (query) => {
     try {
       const res = await fetch(`${apiUrl}&q=${query}`);
@@ -51,8 +52,7 @@ function App() {
               setCategory={setCategory}
             />
           }
-        >
-          {/* вложенные маршруты */}
+        > 
           <Route index element={<HomePage articles={articles} />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="faq" element={<FaqPage />} />
@@ -61,8 +61,7 @@ function App() {
           <Route path="events" element={<EventsPage />} />
         </Route>
       </Routes>
-
-      {/* модалки вне Layout, чтобы перекрывали всё */}
+ {/* modal windows */}
       {activeModal === 'login' && <ModalLogin onClose={closeModal} onRegisterClick={openRegister} />}
       {activeModal === 'register' && <Register onClose={closeModal} />}
     </Router>
