@@ -51,8 +51,11 @@
 }
 
 .theme-button {
-  background-color: transparent; 
+  background: var(--btn-bg); 
+  border-radius: 50%;
+  margin: 0;
 }
+
 
 @media (max-width: 960px) {
   .nav {
