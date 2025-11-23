@@ -1,7 +1,7 @@
 .footer-container {
   max-width: 1440px;
   margin: 64px auto 0;
-  padding: 96px 0 32px;
+  padding: 96px 48px 32px;
   display: flex;
   justify-content: space-between;
   flex-direction: column; 
@@ -35,6 +35,7 @@
 @media (max-width: 960px) {
   .footer-container {
     align-items: center;
+    padding: 64px 16px 32px;
   }
 
   .footer-items {

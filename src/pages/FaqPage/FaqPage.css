@@ -1,8 +1,8 @@
 .accordion-item { margin-bottom: 16px; }
 .accordion-item:nth-child(1) { margin-top: 24px; }
-.accordion-trigger { border-radius: 8px; outline: none; width: 100%; display: flex; justify-content: space-between; padding: 24px; color: black; cursor: pointer; background: #ffffff; }
+.accordion-trigger {  border-radius: 8px; outline: none; width: 100%; display: flex; justify-content: space-between; padding: 24px; color: var(--btn-text); cursor: pointer; background: var(--btn-bg); }
 .accordion-trigger:hover { background: #6b6b6b; color: #ffffff; }
 .accordion-content { padding: 16px; background: var(--bg-text); border-radius: 8px; }
 .accordion-icon { transition: transform 0.3s; }
 [data-state="open"] .accordion-icon { transform: rotate(180deg); }
-[data-state="open"] .accordion-trigger { background: #6b6b6b; color: #ffffff;}
+[data-state="open"] .accordion-trigger { background: #6b6b6b; color: var(--btn-text);}

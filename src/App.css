@@ -1,7 +1,7 @@
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 48px;
   transition: 0.3s, color 0.3s;
 }
  
@@ -22,3 +22,9 @@ body.dark {
 }
 
  
+
+@media (max-width:960px) {
+   .wrapper {
+    padding: 0 16px;
+   }
+}

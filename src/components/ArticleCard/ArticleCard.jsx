@@ -3,7 +3,7 @@ import { UniversalButton } from '../UniversalButton'
 import { useState } from 'react'
 
 export function ArticleCard({ article }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false) 
 
   return (
     <div className="article-card">
@@ -18,7 +18,7 @@ export function ArticleCard({ article }) {
       )} 
       <p className={open ? 'description-full' : 'description-truncated'}>
         {article.description}
-      </p>
+      </p> 
       <UniversalButton onClick={() => setOpen(!open)}>
         {open ? 'Hide' : 'Show'}
       </UniversalButton>

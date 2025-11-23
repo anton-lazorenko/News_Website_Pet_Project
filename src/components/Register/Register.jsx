@@ -21,9 +21,8 @@ export function Register({ onClose }) {
       body: JSON.stringify({ firstName, lastName, email, pass })
     });
 
-    const data = await res.json(); 
-
-     onClose();
+    const data = await res.json();  
+    onClose();
   }
 
   return (
