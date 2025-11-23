@@ -36,7 +36,7 @@ export function Footer() {
       <div className='social-links'>
         <SocialIcon name="facebook" href="https://facebook.com" />
         <SocialIcon name="instagram" href="https://instagram.com" />
-        <SocialIcon name="telegram" href="https://t.me/anton" />
+        <SocialIcon name="telegram" href="https://t.me" />
         <SocialIcon name="twitter" href="https://twitter.com" />
         <SocialIcon name="youtube" href="https://youtube.com" />
       </div>

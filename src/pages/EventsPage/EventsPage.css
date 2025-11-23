@@ -12,4 +12,6 @@
   max-height: auto;
 }
 
- 
+.goHomeButton {
+  margin-bottom: 64px;
+}

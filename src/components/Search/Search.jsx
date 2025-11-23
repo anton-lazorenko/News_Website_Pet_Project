@@ -4,11 +4,10 @@ import { useState } from 'react'
 
 import { SearchButton } from '../SearchButton'
 
-export function Search({ fetchNews }) {
-
-
+export function Search({ fetchNews }) { 
   const [query, setQuery] = useState('')  
 
+// get data from API
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!query.trim()) return  

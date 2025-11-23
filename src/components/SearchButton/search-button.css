@@ -1,7 +1,14 @@
 .search-button {
-  background-color: #248aef;
-  border-radius: 0 8px 8px 0; 
-  padding: 4px 48px 0;  
+  border-radius: 0 8px 8px 0;
+  border: 0;
+  padding: 4px 48px 0;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+.search-icon {
+  filter: invert(0);
 }
 
- 
+body.dark .search-icon {
+  filter: invert(1);
+}

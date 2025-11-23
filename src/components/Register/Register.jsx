@@ -10,7 +10,8 @@ export function Register({ onClose }) {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
-
+ 
+  // sending user data to the server
   async function handleSubmit(e) {
     e.preventDefault();
 

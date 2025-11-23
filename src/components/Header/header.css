@@ -13,18 +13,16 @@
   gap: 48px;
 }
 
-.loginButton {
+.login-button {
   padding: 13px 48px;
   border-radius: 8px;
   white-space: nowrap;
-  border: 1px solid black;
-  color: black;
-  background-color: transparent;
+  background: var(--btn-bg);
+  color: var(--btn-text);
 }
 
-.loginButton:hover { 
-  background-color: #57595B;
-  border: 1px solid white;
+.login-button:hover {
+  background-color: #57595B; 
   color: white;
 }
 
@@ -36,9 +34,9 @@
 
 .about_us-button {
   padding: 13px 48px;
-  border-radius: 50px;
-  white-space: nowrap;
-  color: black;
+  border-radius: 8px;
+  white-space: nowrap; 
+  color: var(--text);
   background-color: transparent;
 }
 
@@ -50,6 +48,10 @@
 
 .burger {
   display: none;
+}
+
+.theme-button {
+  background-color: transparent; 
 }
 
 @media (max-width: 960px) {
@@ -66,17 +68,17 @@
     gap: 12px;
   }
 
-  .nav.open { 
+  .nav.open {
     min-width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
   }
-  
+
   .header-buttons {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
-  
+
   .burger {
     display: block;
     background: none;

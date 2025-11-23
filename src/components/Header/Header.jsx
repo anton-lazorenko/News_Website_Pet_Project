@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-export function Header({ setCategory, fetchNews, modalOpenHandler }) {
-//  Create state for burger
+export function Header({ setCategory, fetchNews, modalOpenHandler, theme, setTheme }) {
+  //  Create state for burger
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -21,8 +21,14 @@ export function Header({ setCategory, fetchNews, modalOpenHandler }) {
             <Link to="/about">
               <button className='about_us-button'>About Us</button>
             </Link>
-            <button onClick={modalOpenHandler} className='loginButton'>Log In</button>
+            <button onClick={modalOpenHandler} className='login-button'>Log In</button>
           </div>
+          <button
+            className='theme-button'
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          >
+            {theme === 'light' ? '🌙' : '☀️'} 
+          </button>
         </div>
         <button className="burger" onClick={() => setIsOpen(!isOpen)}>
           ☰

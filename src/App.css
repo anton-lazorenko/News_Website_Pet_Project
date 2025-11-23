@@ -2,10 +2,23 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 16px;
+  transition: 0.3s, color 0.3s;
 }
  
 .footer-wrapper {
-  background-color: #f0f3f5;
+  background-color: #181818;
+  box-shadow: 0 -1px 10px 1px rgba(255, 255, 255, 0.2);
   padding: 0 16px;
 }
 
+body.light {
+  background: #fff;
+  color: #000;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f5f5dc;  
+}
+
+ 

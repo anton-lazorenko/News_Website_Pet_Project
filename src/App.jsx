@@ -19,11 +19,17 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState('latest');
   const [activeModal, setActiveModal] = useState(null);
+  const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+    document.body.classList.remove('light', 'dark');
+    document.body.classList.add(theme);
+  }, [theme]);
 
   // fetch request to News API
-  const fetchNews = async (query) => {
+  const fetchNews = async (query, language = 'en') => {
     try {
-      const res = await fetch(`${apiUrl}&q=${query}`);
+      const res = await fetch(`${apiUrl}&q=${query}&language=${language}`);
       const data = await res.json();
       setArticles(data.results);
     } catch (error) {
@@ -42,17 +48,19 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
-            <Layout 
+            <Layout
               modalOpenHandler={openLogin}
               setArticles={setArticles}
               fetchNews={fetchNews}
               setCategory={setCategory}
+              theme={theme}          
+              setTheme={setTheme}
             />
           }
-        > 
+        >
           <Route index element={<HomePage articles={articles} />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="faq" element={<FaqPage />} />
@@ -61,7 +69,7 @@ function App() {
           <Route path="events" element={<EventsPage />} />
         </Route>
       </Routes>
- {/* modal windows */}
+      {/* modal windows */}
       {activeModal === 'login' && <ModalLogin onClose={closeModal} onRegisterClick={openRegister} />}
       {activeModal === 'register' && <Register onClose={closeModal} />}
     </Router>
