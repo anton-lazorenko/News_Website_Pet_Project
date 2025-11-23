@@ -19,12 +19,24 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState('latest');
   const [activeModal, setActiveModal] = useState(null);
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(() => {
+  return localStorage.getItem('theme') || 'light';
+});
 
-    useEffect(() => {
-    document.body.classList.remove('light', 'dark');
-    document.body.classList.add(theme);
-  }, [theme]);
+ 
+useEffect(() => {
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    setTheme(saved);
+  }
+}, []);
+ 
+useEffect(() => {
+  document.body.classList.remove('light', 'dark');
+  document.body.classList.add(theme);
+  localStorage.setItem('theme', theme);
+}, [theme]);
+
 
   // fetch request to News API
   const fetchNews = async (query, language = 'en') => {
