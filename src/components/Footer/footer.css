@@ -1,6 +1,6 @@
 .footer-container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 64px auto;
   padding: 96px 0 32px;
   display: flex;
   justify-content: space-between;

@@ -22,7 +22,7 @@
 }
 
 .login-button:hover {
-  background-color: #57595B; 
+  background-color: #57595B;
   color: white;
 }
 
@@ -35,13 +35,14 @@
 .about_us-button {
   padding: 13px 48px;
   border-radius: 8px;
-  white-space: nowrap; 
+  white-space: nowrap;
   color: var(--text);
   background-color: transparent;
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 16px;
   flex: 1
 }
@@ -51,8 +52,10 @@
 }
 
 .theme-button {
-  background: var(--btn-bg); 
+  max-width: 64px;
+  background: var(--btn-bg);
   border-radius: 50%;
+  aspect-ratio: 1 / 1;
   margin: 0;
 }
 
@@ -88,6 +91,14 @@
     border: none;
     font-size: 28px;
     cursor: pointer;
-    color: black
+    color: var(--btn);
+  }
+
+  .about_us-button {
+    padding: 13px 48px;
+    border-radius: 8px;
+    white-space: nowrap;
+    color: var(--btn-text);
+    background: var(--btn-bg);
   }
 }
