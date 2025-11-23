@@ -1,6 +1,6 @@
 .footer-container {
   max-width: 1440px;
-  margin: 64px auto;
+  margin: 64px auto 0;
   padding: 96px 0 32px;
   display: flex;
   justify-content: space-between;
@@ -19,9 +19,10 @@
 
 .social-links {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   margin: 96px auto;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-copyright {
