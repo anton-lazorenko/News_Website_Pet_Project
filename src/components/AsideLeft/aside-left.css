@@ -1,10 +1,11 @@
 .aside-left {
-  max-width: 100%;
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 24px;
-  padding: 0 16px;
+  padding: 0 32px 0 0;
 }
 
 .aside-left-items {

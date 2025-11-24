@@ -11,6 +11,7 @@ import { FaqPage } from './pages/FaqPage';
 import { ContactsPage } from './pages/ContactsPage';
 import { BlogPage } from './pages/BlogPage';
 import { EventsPage } from './pages/EventsPage';
+import { NewsPage } from './pages/NewsPage';
 
 import { apiUrl } from './constants/constants';
 import { useState, useEffect } from 'react';
@@ -66,6 +67,7 @@ useEffect(() => {
             <Layout
               modalOpenHandler={openLogin}
               setArticles={setArticles}
+              articles={articles}
               fetchNews={fetchNews}
               setCategory={setCategory}
               theme={theme}          
@@ -79,6 +81,7 @@ useEffect(() => {
           <Route path="contacts" element={<ContactsPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="events" element={<EventsPage />} />
+          <Route path="news/:title" element={<NewsPage />} /> 
         </Route>
       </Routes>
       {/* modal windows */}

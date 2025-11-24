@@ -1,56 +1,50 @@
- 
-.article-card {
-  max-width: 560px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  gap: 24px;
-}
+ .article-card {
+   max-width: 760px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden;
+   gap: 24px;
+ }
 
-.article-image {
-  width: 100%;
-  object-fit: cover;
-}
- 
-.article-title {
-  font-size: 24px; 
-  font-weight: 600;
-  margin: 0;
-}
+ .article-image {
+   width: 100%;
+   object-fit: cover;
+ }
 
-.description-truncated {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+ .article-title {
+   font-size: 24px;
+   font-weight: 600;
+   margin: 0;
+ }
 
-.description-full {
-  display: block; 
-  overflow: visible;
-  text-overflow: unset;
-  -webkit-line-clamp: unset; 
-  -webkit-box-orient: vertical;
-}
+ .article-link {
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+ }
+
+ .creator {
+   font-style: italic;
+ }
+
+ .btn.read-button {
+   width: 100%;
+ }
 
 
-.article-link {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
+ .description {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden; 
+ }
 
-.creator {
-  font-style: italic;
-}
+ @media (max-width: 480px) {
 
-@media (max-width: 480px) {
-  
-  .article-card {
-    max-width: 380px;
-    gap: 12px;
-  }
-}
+   .article-card {
+     max-width: 380px;
+     gap: 12px;
+   }
+ }

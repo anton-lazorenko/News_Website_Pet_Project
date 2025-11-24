@@ -1,9 +1,8 @@
 import './articleCard.css'
 import { UniversalButton } from '../UniversalButton'
-import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export function ArticleCard({ article }) {
-  const [open, setOpen] = useState(false) 
 
   return (
     <div className="article-card">
@@ -15,14 +14,13 @@ export function ArticleCard({ article }) {
 
       {article.creator && (
         <p><span className="creator">{article.creator.join(', ')}</span></p>
-      )} 
-      <p className={open ? 'description-full' : 'description-truncated'}>
+      )}
+      <p className='description'>
         {article.description}
-      </p> 
-      <UniversalButton onClick={() => setOpen(!open)}>
-        {open ? 'Hide' : 'Show'}
-      </UniversalButton>
+      </p>
+      <Link to={`/news/${article.title}`} state={{ article }}>
+        <UniversalButton className='read-button'>Read</UniversalButton>
+      </Link> 
     </div>
-
   )
 }

@@ -1,0 +1,10 @@
+ .article-card {
+  margin: 64px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .article-image {
+  width: 100%;
+ }
