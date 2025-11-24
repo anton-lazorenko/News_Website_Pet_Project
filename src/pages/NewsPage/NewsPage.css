@@ -8,3 +8,10 @@
  .article-image {
   width: 100%;
  }
+ 
+ .news-description {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: visible;  
+}

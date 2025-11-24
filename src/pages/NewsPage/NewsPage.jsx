@@ -19,7 +19,7 @@ export function NewsPage() {
       {article.creator && (
         <p className="creator">{article.creator.join(', ')}</p>
       )}
-      <p className="description">{article.description}</p>
+      <p className="news-description">{article.description}</p>
     </div>
   );
 }
