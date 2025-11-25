@@ -18,8 +18,8 @@ export function ArticleCard({ article }) {
       <p className='description'>
         {article.description}
       </p>
-      <Link to={`/news/${article.title}`} state={{ article }}>
-        <UniversalButton className='read-button'>Read</UniversalButton>
+      <Link className="read-link" to={`/news/${article.title}`} state={{ article }}>
+        <UniversalButton theme="read">Read</UniversalButton>
       </Link> 
     </div>
   )

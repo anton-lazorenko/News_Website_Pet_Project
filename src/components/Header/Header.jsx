@@ -18,7 +18,7 @@ export function Header({ setCategory, fetchNews, modalOpenHandler, theme, setThe
         <div className={`nav ${isOpen ? "open" : ""}`}>
           <Search fetchNews={fetchNews} />
           <div className='header-buttons'>
-            <Link to="/about">
+            <Link to="/about" onClick={() => setIsOpen(false)}>
               <button className='about_us-button'>About Us</button>
             </Link>
             <button onClick={modalOpenHandler} className='login-button'>Log In</button>

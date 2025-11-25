@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.input-search { 
+.input-search {
   background: var(--input-bg);
   border: 1px solid var(--input-border);
   color: var(--text);
@@ -35,4 +35,12 @@
 
 input::placeholder {
   font-size: 18px;
+}
+
+@media (max-width: 960px) {
+
+  .input-search {
+    max-width: 100%;
+  }
+
 }

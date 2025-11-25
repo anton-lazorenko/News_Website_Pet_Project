@@ -5,10 +5,19 @@
   background: var(--btn-bg);
   color: var(--btn-text);
 }
+
 .search-icon {
   filter: invert(0);
 }
 
 body.dark .search-icon {
   filter: invert(1);
+}
+
+
+@media (max-width: 960px) {
+
+  .search-button {
+    padding: 4px 24px 0;
+  }
 }
