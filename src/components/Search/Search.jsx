@@ -14,7 +14,8 @@ export function Search({ fetchNews }) {
     e.preventDefault()
     if (!query.trim()) return
     fetchNews(query)
-    navigate('/')
+    navigate('/') 
+    setQuery('')
   }
 
   return (
@@ -33,6 +34,7 @@ export function Search({ fetchNews }) {
         id="site-search"
         name="input"
         placeholder="Search..."
+        value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
       <SearchButton />
