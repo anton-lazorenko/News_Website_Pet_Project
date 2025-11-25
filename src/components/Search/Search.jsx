@@ -1,17 +1,20 @@
 import './search.css'
 
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { SearchButton } from '../SearchButton'
 
-export function Search({ fetchNews }) { 
-  const [query, setQuery] = useState('')  
+export function Search({ fetchNews }) {
+  const [query, setQuery] = useState('')
+  const navigate = useNavigate()
 
-// get data from API
+  // get data from API
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!query.trim()) return  
-    fetchNews(query)  
+    if (!query.trim()) return
+    fetchNews(query)
+    navigate('/')
   }
 
   return (
@@ -35,8 +38,7 @@ export function Search({ fetchNews }) {
       <SearchButton />
 
     </form>
-  
+
   )
 }
 
-  

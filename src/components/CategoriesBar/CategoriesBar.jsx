@@ -2,7 +2,12 @@ import { useEffect } from 'react'
 
 import './categoriesBar.css'
 
-export function CategoriesBar({ setCategory }) {
+export function CategoriesBar({ setCategory, navigate }) { 
+
+    const handleClick = (cat) => {
+    setCategory(cat) 
+    navigate('/')     // navigate to HomePage
+  }
 
   useEffect(() => {
     const el = document.querySelector('.categories-bar');
@@ -22,28 +27,28 @@ export function CategoriesBar({ setCategory }) {
 
   return (
     <div className="categories-bar">
-      <button onClick={() => setCategory('All')}>All news</button>
-      <button onClick={() => setCategory('Politics')}>Politics</button>
-      <button onClick={() => setCategory('Technology')}>Technology</button>
-      <button onClick={() => setCategory('Sports')}>Sports</button>
-      <button onClick={() => setCategory('Entertainment')}>Entertainment</button>
-      <button onClick={() => setCategory('World')}>World</button>
-      <button onClick={() => setCategory('Business')}>Business</button>
-      <button onClick={() => setCategory('Science')}>Science</button>
-      <button onClick={() => setCategory('Weather')}>Weather</button>
-      <button onClick={() => setCategory('Society')}>Society</button>
-      <button onClick={() => setCategory('Health')}>Health</button>
-      <button onClick={() => setCategory('Gaming')}>Gaming</button>
-      <button onClick={() => setCategory('Travel')}>Travel</button>
-      <button onClick={() => setCategory('Culture')}>Culture</button>
-      <button onClick={() => setCategory('Economic')}>Economic</button>
-      <button onClick={() => setCategory('Education')}>Education</button>
-      <button onClick={() => setCategory('Environment')}>Environment</button>
-      <button onClick={() => setCategory('Fashion')}>Fashion</button>
-      <button onClick={() => setCategory('Food')}>Food</button>
-      <button onClick={() => setCategory('Law')}>Law</button>
-      <button onClick={() => setCategory('Music')}>Music</button>
-      <button onClick={() => setCategory('Opinion')}>Opinion</button>
+      <button onClick={() => handleClick('All')}>All news</button>
+      <button onClick={() => handleClick('Politics')}>Politics</button>
+      <button onClick={() => handleClick('Technology')}>Technology</button>
+      <button onClick={() => handleClick('Sports')}>Sports</button>
+      <button onClick={() => handleClick('Entertainment')}>Entertainment</button>
+      <button onClick={() => handleClick('World')}>World</button>
+      <button onClick={() => handleClick('Business')}>Business</button>
+      <button onClick={() => handleClick('Science')}>Science</button>
+      <button onClick={() => handleClick('Weather')}>Weather</button>
+      <button onClick={() => handleClick('Society')}>Society</button>
+      <button onClick={() => handleClick('Health')}>Health</button>
+      <button onClick={() => handleClick('Gaming')}>Gaming</button>
+      <button onClick={() => handleClick('Travel')}>Travel</button>
+      <button onClick={() => handleClick('Culture')}>Culture</button>
+      <button onClick={() => handleClick('Economic')}>Economic</button>
+      <button onClick={() => handleClick('Education')}>Education</button>
+      <button onClick={() => handleClick('Environment')}>Environment</button>
+      <button onClick={() => handleClick('Fashion')}>Fashion</button>
+      <button onClick={() => handleClick('Food')}>Food</button>
+      <button onClick={() => handleClick('Law')}>Law</button>
+      <button onClick={() => handleClick('Music')}>Music</button>
+      <button onClick={() => handleClick('Opinion')}>Opinion</button>
     </div>
   )
 }

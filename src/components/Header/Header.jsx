@@ -1,6 +1,7 @@
-import './header.css'
-import { Logo } from '../Logo'
-import { Search } from '../Search'
+import './header.css';
+import { Logo } from '../Logo';
+import { Search } from '../Search';
+import { useNavigate } from 'react-router-dom';
 import { CategoriesBar } from '../CategoriesBar/CategoriesBar';
 import { Link } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ import { useState } from 'react';
 export function Header({ setCategory, fetchNews, modalOpenHandler, theme, setTheme }) {
   //  Create state for burger
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="header-wrapper">
@@ -27,14 +29,14 @@ export function Header({ setCategory, fetchNews, modalOpenHandler, theme, setThe
             className='theme-button'
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           >
-            {theme === 'light' ? '🌙' : '☀️'} 
+            {theme === 'light' ? '🌙' : '☀️'}
           </button>
         </div>
         <button className="burger" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
       </div>
-      <CategoriesBar setCategory={setCategory} />
+      <CategoriesBar setCategory={setCategory} navigate={navigate} />
     </div>
   )
 }
