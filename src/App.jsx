@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout.jsx';
 import { ModalLogin } from './components/ModalLogin';
 import { Register } from './components/Register';
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop.js';
 
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -60,6 +61,7 @@ useEffect(() => {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
