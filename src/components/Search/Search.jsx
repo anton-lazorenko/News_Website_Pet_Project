@@ -37,10 +37,9 @@ export function Search({ fetchNews }) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <SearchButton />
-
-    </form>
-
+      <SearchButton /> 
+    </form> 
   )
 }
 
+ 

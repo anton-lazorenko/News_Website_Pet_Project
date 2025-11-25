@@ -4,13 +4,13 @@
   padding: 96px 48px 32px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column; 
-  color: aliceblue; 
+  flex-direction: column;
+  color: aliceblue;
 }
 
 .footer-items {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .menu {
@@ -30,6 +30,26 @@
   text-align: center;
   display: flex;
   gap: 24px;
+  color: #a9a9a9;
+}
+
+.footer-terms,
+.footer-policy {
+  color: #a9a9a9;
+}
+
+.footer-terms,
+.footer-policy {
+  color: #a9a9a9;
+  font-weight: 500;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.footer-terms:hover,
+.footer-policy:hover {
+  color: #ffffff;
+  opacity: 1;
 }
 
 @media (max-width: 960px) {

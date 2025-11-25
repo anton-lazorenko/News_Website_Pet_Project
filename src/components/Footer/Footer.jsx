@@ -41,7 +41,7 @@ export function Footer() {
         <SocialIcon name="youtube" href="https://youtube.com" />
       </div>
       <div className='footer-copyright'>
-        <p>© 2025 News. All rights reserved.</p> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+        <p>© 2025 News. All rights reserved.</p> | <a className='footer-terms' href="#">Terms of Service</a> | <a className='footer-policy' href="#">Privacy Policy</a>
       </div>
     </footer>
   )
