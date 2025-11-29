@@ -2,14 +2,15 @@
   width: 100%;
   max-width: 600px;
   position: fixed;
+  border-radius: 16px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(191, 219, 242, 0.9);
+  background-color: #3d3d3d;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 72px;
-  color: #000;
+  color: #ffffff;
 }
 
 .modal-form {
@@ -31,9 +32,13 @@
 
 .enter-button {
   padding: 16px 48px;
-  background-color: #44c42b;
-  height: 68px;
-}
+  background: var(--btn-bg); 
+} 
+
+.enter-button:hover { 
+  background-color: #555555;
+  color: #eaeaea; 
+} 
 
 fieldset {
   border: none;
@@ -53,14 +58,18 @@ fieldset {
   outline: none;
 }
 
-.enter-with-google-button {
-  padding: 16px 48px;
-  color: #fff;
-  background-color: #5185ed;
+.enter-with-google-button { 
+  color: var(--btn-text);
+  background: var(--btn-bg);
   display: flex;
   align-items: center;
   gap: 16px;
   justify-content: center;
+}
+
+.enter-with-google-button:hover {
+   background-color: #555555;
+  color: #eaeaea; 
 }
 
 legend {
@@ -80,7 +89,7 @@ legend {
 }
 
 @media (max-width: 960px) {
-  .modal-login { 
-    padding: 72px 32px; 
+  .modal-login {
+    padding: 72px 32px;
   }
 }

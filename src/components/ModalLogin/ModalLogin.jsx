@@ -29,12 +29,12 @@ export function ModalLogin({ onClose, onRegisterClick }) {
             autoComplete="current-password"
             required
           />
-        </fieldset> 
-        <button className='enter-button' type="submit">Enter</button>  
+        </fieldset>
+        <button className='enter-button' type="submit">Enter</button>
         <button
           className='enter-with-google-button'
           type="button"
-          aria-label="Войти с помощью Google"
+          aria-label="Continue with Google"
         >
           <img className='googleIcon' src={googleIcon} alt="googleIcon" />
           Continue with Google
